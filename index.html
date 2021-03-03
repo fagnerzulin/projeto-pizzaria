@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -26,8 +32,8 @@
         </div>
 
         <nav>
-          <span class="button">Home</span>
-          <span class="button">Sobre</span>
+          <a href="#home"><span class="button">Home</span></a>
+          <a href="#sobre"><span class="button">Sobre</span></a>
           <span class="button">Cardápio</span>
           <span class="button">Contato</span>
         </nav>
@@ -36,7 +42,49 @@
           <span class="button">Peça já</span>
         </div>
       </header>
-      <main></main>
+      <main>
+        <section class="flexCenter" id="home">
+          <img
+            class="img-home"
+            src="./img/imagem-cupom.jpg"
+            alt="Imagem de uma mulher segurando um pedaço de pizza"
+          />
+          <div class="promocao">
+            <div>
+              <h1>Promoção</h1>
+              <p>Preenha os campos a seguir e ganhe um cupom</p>
+            </div>
+
+            <form action="">
+              <label for="nome">Nome: </label>
+              <input type="text" name="nome" id="nome" />
+
+              <label for="email">E-mail: </label>
+              <input type="text" name="email" id="email" />
+            </form>
+            <span class="button">Receba seu Cupom</span>
+          </div>
+        </section>
+
+        <section class="flexCenter" id="sobre">
+          <div class="texto-sobre">
+            <h1>Sobre Nós</h1>
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias nihil similique maxime illum magni, tempora assumenda,
+              quis magnam nobis quae qui vero at porro, necessitatibus excepturi
+              animi iusto voluptates alias!
+            </p>
+          </div>
+
+          <img
+            class="img-sobre"
+            src="./img/imagem-sobre.jpg"
+            alt="Foto de um homem segurando caixas de pizza"
+          />
+        </section>
+      </main>
       <footer></footer>
     </div>
   </body>

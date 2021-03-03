@@ -13,6 +13,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -20,10 +26,22 @@
   background-color: var(--branco);
 }
 
+a {
+  text-decoration: none;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Header*/
+
 header {
   height: 70px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   display: flex;
   align-items: center;
@@ -33,13 +51,15 @@ header {
 }
 
 header img {
-  max-width: 200px;
+  padding-top: 5px;
+  max-width: 250px;
 }
 
 nav {
   min-width: 400px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .button {
@@ -68,4 +88,75 @@ nav span:hover {
 .delivery span:hover {
   background-color: var(--vermelho);
   color: white;
+}
+
+/*Main*/
+
+/*section home*/
+
+#home {
+  height: 100vh;
+  background-color: #fadb5c;
+}
+
+.img-home {
+  max-width: 50%;
+}
+
+.promocao {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.329);
+  border-radius: 10px;
+}
+
+.promocao h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.promocao > form {
+  display: flex;
+  flex-direction: column;
+}
+.promocao > form input {
+  width: 400px;
+  height: 2.5em;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 30px;
+  outline: none;
+  border: 2px solid var(--amarelo);
+}
+
+.promocao > span {
+  border: 2px solid var(--vermelho);
+  color: var(--vermelho);
+}
+.promocao > span:hover {
+  background-color: var(--vermelho);
+  color: white;
+}
+
+/*section sobre*/
+
+#sobre {
+  height: 100vh;
+  background-color: white;
+}
+
+.img-sobre {
+  max-height: 70%;
+}
+
+.texto-sobre {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
