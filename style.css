@@ -172,7 +172,7 @@ nav span:hover {
   display: flex;
   flex-direction: column;
   justify-content: initial;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 #cardapio > h1 {
@@ -181,7 +181,7 @@ nav span:hover {
 }
 
 .pizzas {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -190,8 +190,8 @@ nav span:hover {
 
 .card-pizza {
   width: 200px;
-  height: 210px;
-  margin: 10px;
+  height: 250px;
+  margin: 5px;
   background-color: var(--branco);
   padding: 5px;
   display: flex;
@@ -203,6 +203,17 @@ nav span:hover {
 
 .card-pizza > img {
   max-width: 50%;
+}
+
+.ingrediente {
+  font-size: 0.7em;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.preco {
+  margin-top: 2px;
+  font-weight: bold;
 }
 
 .button-tamanhos > span.button {
