@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -34,8 +40,8 @@
         <nav>
           <a href="#home"><span class="button">Home</span></a>
           <a href="#sobre"><span class="button">Sobre</span></a>
-          <span class="button">Cardápio</span>
-          <span class="button">Contato</span>
+          <a href="#cardapio"><span class="button">Cardápio</span></a>
+          <a href="#contato"><span class="button">Contato</span></a>
         </nav>
 
         <div class="delivery">
@@ -84,8 +90,156 @@
             alt="Foto de um homem segurando caixas de pizza"
           />
         </section>
+
+        <section class="flexCenter" id="cardapio">
+          <h1>Cardápio</h1>
+          <div class="pizzas">
+            <div class="card-pizza">
+              <img src="./img/pizzas/pizza1.png" alt="" />
+              <p class="sabor">Sabor</p>
+              <p class="ingrediente">ingredientes</p>
+              <div class="button-tamanhos">
+                <span class="button">P</span>
+                <span class="button">M</span>
+                <span class="button">G</span>
+              </div>
+              <p class="preco">R$00,00</p>
+            </div>
+            <div class="card-pizza">
+              <img src="./img/pizzas/pizza2.png" alt="" />
+              <p class="sabor">Sabor</p>
+              <p class="ingrediente">ingredientes</p>
+              <div class="button-tamanhos">
+                <span class="button">P</span>
+                <span class="button">M</span>
+                <span class="button">G</span>
+              </div>
+              <p class="preco">R$00,00</p>
+            </div>
+            <div class="card-pizza">
+              <img src="./img/pizzas/pizza3.png" alt="" />
+              <p class="sabor">Sabor</p>
+              <p class="ingrediente">ingredientes</p>
+              <div class="button-tamanhos">
+                <span class="button">P</span>
+                <span class="button">M</span>
+                <span class="button">G</span>
+              </div>
+              <p class="preco">R$00,00</p>
+            </div>
+            <div class="card-pizza">
+              <img src="./img/pizzas/pizza4.png" alt="" />
+              <p class="sabor">Sabor</p>
+              <p class="ingrediente">ingredientes</p>
+              <div class="button-tamanhos">
+                <span class="button">P</span>
+                <span class="button">M</span>
+                <span class="button">G</span>
+              </div>
+              <p class="preco">R$00,00</p>
+            </div>
+            <div class="card-pizza">
+              <img src="./img/pizzas/pizza5.png" alt="" />
+              <p class="sabor">Sabor</p>
+              <p class="ingrediente">ingredientes</p>
+              <div class="button-tamanhos">
+                <span class="button">P</span>
+                <span class="button">M</span>
+                <span class="button">G</span>
+              </div>
+              <p class="preco">R$00,00</p>
+            </div>
+            <div class="card-pizza">
+              <img src="./img/pizzas/pizza6.png" alt="" />
+              <p class="sabor">Sabor</p>
+              <p class="ingrediente">ingredientes</p>
+              <div class="button-tamanhos">
+                <span class="button">P</span>
+                <span class="button">M</span>
+                <span class="button">G</span>
+              </div>
+              <p class="preco">R$00,00</p>
+            </div>
+            <div class="card-pizza">
+              <img src="./img/pizzas/pizza7.png" alt="" />
+              <p class="sabor">Sabor</p>
+              <p class="ingrediente">ingredientes</p>
+              <div class="button-tamanhos">
+                <span class="button">P</span>
+                <span class="button">M</span>
+                <span class="button">G</span>
+              </div>
+              <p class="preco">R$00,00</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="flexCenter" id="contato">
+          <h1>Contato</h1>
+          <form class="contato-form" action="">
+            <label for="nomeContato">Nome:</label>
+            <input
+              type="text"
+              name="nomeContato"
+              id="nomeContato"
+              placeholder="Digite seu nome"
+            />
+
+            <label for="telefone">Telefone:</label>
+            <input
+              type="text"
+              name="telefone"
+              id="telefone"
+              placeholder="Digite seu telefone"
+            />
+
+            <div>
+              <label for="whats">É WhatsApp?</label>
+              <input type="checkbox" name="whats" id="whats" />
+            </div>
+
+            <label for="emailContato">E-mail:</label>
+            <input
+              type="text"
+              name="emailContato"
+              id="emailContato"
+              placeholder="Digite seu email"
+            />
+
+            <label for="mensagem">Digite sua mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <div class="flexCenter">
+              <span class="button button-enviar">Enviar</span>
+            </div>
+          </form>
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <a href="index.html">
+          <img
+            src="./img/Logo1.png"
+            alt="Logo com o texto All'Arrabiata - Uma explosão de sabor"
+          />
+        </a>
+
+        <div class="icons">
+          <span class="button">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+          <span class="button">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span class="button">
+            <i class="fab fa-twitter"></i>
+          </span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
