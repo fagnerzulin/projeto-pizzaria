@@ -416,6 +416,9 @@ footer img {
     margin-top: 10vh;
     max-width: 72%;
   }
+  .texto-form {
+    margin-bottom: 15px;
+  }
 
   .promocao {
     max-width: 90vw;
