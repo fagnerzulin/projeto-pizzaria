@@ -1,6 +1,43 @@
-window.addEventListener("load", renderizaCardsCardapio());
+window.addEventListener("load", renderizaElementos());
 
-function renderizaCardsCardapio() {
+function hamburguerMenu() {
+  const header = document.getElementById("header");
+  const nav = document.getElementById("nav");
+
+  if (nav.style.display === "flex") {
+    nav.style.display = "none";
+    header.style.minHeight = "12vh";
+  } else {
+    nav.style.display = "flex";
+    header.style.minHeight = "65vh";
+  }
+}
+
+function escondeMenuMobile() {
+  const larguraTela = screen.width;
+
+  if (larguraTela >= 320 && larguraTela <= 420) {
+    hamburguerMenu();
+  }
+}
+
+function trocaImagensMobile() {
+  const larguraTela = screen.width;
+  const imagemPromocao = document.getElementById("img-promo");
+  const imagemSobre = document.getElementById("imagem-sobre");
+
+  if (larguraTela >= 320 && larguraTela <= 420) {
+    imagemPromocao.setAttribute("src", "./img/imagem-cupom-mobile.jpg");
+    imagemSobre.setAttribute("src", "./img/imagem-sobre-mobile.jpg");
+  }
+}
+
+function renderizaElementos() {
+  trocaImagensMobile();
+  cardsCardapio();
+}
+
+function cardsCardapio() {
   const { pizzas } = criaPizzas();
 
   const cardapioContainer = document.getElementById("cardapioContainer");
@@ -37,7 +74,6 @@ function trocaPreco(event) {
   const id = event.target.id;
   const precoPizza = document.getElementById(`precoPizza${id}`);
 
-  let valorPizza;
   switch (tamanho) {
     case "P":
       precoPizza.innerText = numeroParaMoeda(pizzas[id].valores[0]);

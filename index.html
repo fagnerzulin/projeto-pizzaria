@@ -27,7 +27,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header id="header">
         <div class="logo">
           <a href="index.html">
             <img
@@ -37,20 +37,41 @@
           </a>
         </div>
 
-        <nav>
-          <a href="#home"><span class="button">Home</span></a>
-          <a href="#sobre"><span class="button">Sobre</span></a>
-          <a href="#cardapio"><span class="button">Cardápio</span></a>
-          <a href="#contato"><span class="button">Contato</span></a>
-        </nav>
+        <a
+          href="javascript:void(0);"
+          class="menuHamb"
+          onclick="hamburguerMenu()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
 
-        <div class="delivery">
-          <span class="button">Peça já</span>
-        </div>
+        <nav id="nav">
+          <div class="buttons-menu">
+            <a onclick="escondeMenuMobile()" href="#home">
+              <span class="button">Home</span>
+            </a>
+
+            <a onclick="escondeMenuMobile()" href="#sobre">
+              <span class="button">Sobre</span>
+            </a>
+
+            <a onclick="escondeMenuMobile()" href="#cardapio">
+              <span class="button">Cardápio</span>
+            </a>
+
+            <a onclick="escondeMenuMobile()" href="#contato">
+              <span class="button">Contato</span>
+            </a>
+          </div>
+          <div class="delivery">
+            <span onclick="escondeMenuMobile()" class="button">Peça já</span>
+          </div>
+        </nav>
       </header>
       <main>
         <section class="flexCenter" id="home">
           <img
+            id="img-promo"
             class="img-home"
             src="./img/imagem-cupom.jpg"
             alt="Imagem de uma mulher segurando um pedaço de pizza"
@@ -85,6 +106,7 @@
           </div>
 
           <img
+            id="imagem-sobre"
             class="img-sobre"
             src="./img/imagem-sobre.jpg"
             alt="Foto de um homem segurando caixas de pizza"
