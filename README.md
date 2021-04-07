@@ -8,7 +8,7 @@
 
 ---
 
-Projeto é um site (landpage) de uma pizzaria. Fora feito como desafio passado pelo meu antigo mentor pelo Programa Desenvolve do Grupo Boticário (Para saber mais do programa **[Click Aqui](https://desenvolve.grupoboticario.com.br/)** ).
+O projeto é um site (landpage) de uma pizzaria. Fora feito como desafio passado no âmbito das mentorias do Programa Desenvolve do Grupo Boticário (para saber mais do programa **[Click Aqui](https://desenvolve.grupoboticario.com.br/)**).
 
 Para ver esse projeto funcionando: **[Click Aqui](https://fagnerzulin.github.io/projeto-pizzaria/)**
 
