@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./img/Logo1.PNG" alt="Pizzaria Al'Arrabiata"/>
+   <img src="./img/Logo1.png" alt="Pizzaria Al'Arrabiata"/>
 </p>
 
 </br>
