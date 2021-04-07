@@ -172,7 +172,7 @@ nav span:hover {
 
 /*section cardapio*/
 #cardapio {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--laranja);
   display: flex;
   flex-direction: column;
